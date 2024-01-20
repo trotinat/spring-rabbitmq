@@ -31,4 +31,10 @@ public class ProducerController {
         logger.info("user sent: " + user);
         return ResponseEntity.ok("user sent: " + user);
     }
+    @PostMapping("/produce2")
+    public ResponseEntity<String> sendMessageC2(@RequestBody User user) {
+        producerService.sendMessageC2(user);
+        logger.info("user sent: " + user);
+        return ResponseEntity.ok("user sent: "+user);
+}
 }

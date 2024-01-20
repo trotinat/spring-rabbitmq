@@ -7,6 +7,6 @@ spring:
     port: 15672
     username: guest
     exchange: user.exchange
-    routingkey: user.routingkey1
+ #   routingkey: user.routingkey1
 server:
   port: 8083
